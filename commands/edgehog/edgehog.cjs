@@ -1,4 +1,9 @@
 const {SlashCommandBuilder} = require("discord.js");
-new SlashCommandBuilder()
-    .setName('edgehog')
-    .setDescription('Listen to Edgehog Radio in your current voice channel');
+module.exports = {
+    data: new SlashCommandBuilder()
+        .setName('edgehog')
+        .setDescription('Listen to Edgehog Radio in the Voice Channel you are currently in'),
+    async execute(interaction) {
+        //
+    },
+};
